@@ -1,0 +1,37 @@
+version: 2
+updates:
+  # Maintain dependencies for gradle
+  - package-ecosystem: "gradle"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    open-pull-requests-limit: 10
+    target-branch: "master"
+    pull-request-branch-name:
+      separator: "-"
+    assignees:
+      - "Rockin4Life33"
+    reviewers:
+      - "Rockin4Life33"
+    labels:
+      - "gradle"
+      - "dependencies"
+      - "dependabot"
+      
+  # Maintain dependencies for maven
+  - package-ecosystem: "maven"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 10
+    target-branch: "master"
+    pull-request-branch-name:
+      separator: "-"
+    assignees:
+      - "Rockin4Life33"
+    reviewers:
+      - "Rockin4Life33"
+    labels:
+      - "maven"
+      - "dependencies"
+      - "dependabot"
